@@ -1,0 +1,100 @@
+/*CSS Reset*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+/*Declaring variables*/
+:root{
+	--GRAY: #f3f2f2;
+	--WHITE: #ffffff;
+	--ORANGE: #ff9838;
+	--DARK-GRAY: #595959;
+	--BLACK: #000000;
+}
+
+/*Styling the navbar*/
+#navbar{
+	background-color: var(--WHITE);
+	color: var(--BLACK);
+	display: flex;
+	align-items: center;
+	padding: 0.3rem 8rem;
+}
+
+#navbar img{
+	max-width: 130px;
+	max-height: 120px;
+}
+
+#navbar a{
+	color: var(--DARK-GRAY);
+	text-decoration: none;
+	margin: 0 0.7rem;
+	font-size: 1rem;
+}
+
+#navbar a:hover, :focus{
+	color: var(--ORANGE);
+}
+
+#search{
+	position: absolute;
+	right: 8rem;
+}
+
+#search button{
+	color: var(--DARK-GRAY);
+	background-color: var(--GRAY);
+	border: none;
+	font-size: 1rem;
+	padding: 10px;
+	text-align: center;
+}
+
+/*Styling the main page*/
+#main{
+	padding-left: 8rem;
+	padding-right: 8rem;
+	background-color: var(--GRAY);
+}
+
+#main-products{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-img{
+	width: 190px;
+	background-color: var(--WHITE);
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: -2px 2px var(--GRAY);
+}
+
+.product-img img{
+	width: 170px;
+}
+
+.product-img img:hover{
+	opacity: 0.8;
+}
+
+.product-img a{
+	text-align: center;
+	display: inline;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--BLACK);
+}
+
+.product-img a:hover{
+	color: var(--ORANGE);
+}
