@@ -6,23 +6,78 @@
 	<title>Ecommerce website</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="shortcut icon" type="x-icon" href="images/logo.png">
+	<script src="https://kit.fontawesome.com/ac97327f06.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav id="navbar">
-		<a href="" id="nav-logo">
+	<!-- <nav id="navbar">
+
+		<span class="menu">
+		<i class="fa-sharp fa-solid fa-bars"></i>	
+		</span>
+
+		<a href="#" id="nav-logo">
 			<img src="images/logo.png">
 		</a>
 
-		<a href="">Home</a>
+		<div class="hide-btns">
+		<a href="#">Home</a>
 		<a href="">Products</a>
-		<a href="">About Us</a>
-		<a href="">Contact Us</a>
+		<a href="">Get in touch</a>
+		<a href="" target="_blank">Developer</a>
+		</div>
 
 		<span id="search">
-			<button>S</button>
+			<input type="text" placeholder="Search" name="">
+			=== <button> ===<i class="fa-sharp fa-solid fa-magnifying-glass"></i>=== </button> ===
 		</span>
 
 	</nav>
+ -->
+
+
+<nav class="navbar">
+
+<!-- LOGO -->
+
+<div class="logo">
+<img src="images/logo.png" width="80px">
+</div>
+
+<!-- NAVIGATION MENU -->
+
+<ul class="nav-links">
+
+<!-- USING CHECKBOX HACK -->
+
+<input type="checkbox" id="checkbox_toggle" />
+
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+<!-- NAVIGATION MENUS -->
+
+<div class="menu">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="https://economictimes.indiatimes.com/top-trending-products/lifestyle/6-luxury-rose-gold-watches-for-women/articleshow/96484116.cms" target="_blank">News</a></li>
+
+<li class="services">
+
+<a href="https://www.watchrepair.cc/ladies-wrist-watch-repair.html" target="_blank">Services</a>
+
+</li>
+
+<li><a href="#get-in-touch">Get in touch</a></li>
+
+<li><a href="https://mohammedawaldev.netlify.app" target="	_blank">Developer</a></li>
+
+</div>
+
+</ul>
+
+</nav>
+
+
 
 
 	<!--Main Section of the page-->
@@ -33,7 +88,7 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/1.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>Anne Klein Women's Resin Bracelet Watch | best watches for women</caption>
 		  	</a>
 		  	</div>
 
@@ -41,7 +96,7 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/2.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>Anne Klein Women's Genuine Diamond Dial Bangle Watch| best watches for women</caption>
 		  		</div>
 		  	</a>
 		  </div>
@@ -49,7 +104,8 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/3.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>
+Maybelline New York SuperStay Matte Ink City Edition Liquid Lipstick, Artist,</caption>
 		  		</div>
 		  	</a>
 		  </div>
@@ -57,7 +113,8 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/4.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>Anne Klein Women's Genuine Diamond Dial Bracelet Watch | best watches for women 
+				</caption>
 		  		</div>
 		  	</a>
 		  </div>
@@ -65,7 +122,7 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/5.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>Nine West Women's Strap Watch | best watches for women | Top watches</caption>
 		  		</div>
 		  	</a>
 		  </div>
@@ -73,28 +130,109 @@
 		  	<div class="product-img">
 		  	<a href="">
 		  		<img src="images/main-products/6.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
+		  		<caption>Timex Women's Easy Reader 25mm Watch | best watches for women | Top watches</caption>
 		  		</div>
 		  	</a>
 		  </div>
 
-		  	<div class="product-img">
-		  	<a href="">
-		  		<img src="images/main-products/7.jpg">
-		  		<caption>Anne Klien Women Watches</caption>
-		  		</div>
-		  	</a>
+		  
 		  </div>
 		  </section>
 
 
 		  <!--This part contains the sidebar content-->
 		  <aside id="sidebar">
-		  	
+		  	<div class="side-content"></div>
+		  	<div class="side-content">
+		  		<header>Brand deals & more</header>
+		  	</div>
+
+		  	<div class="side-content">
+		  		<header>Popular posts</header>
+		  		<div class="flex-sidebar">
+		  			<div class="image">
+		  				<img src="images/main-products/3.jpg">
+		  			</div>
+		  			<div class="text">
+		  				<a href="">Maybelline New York SuperStay Matte Ink City Edition Liquid Lipstick, Artist,</a>
+		  				<p>Maybelline New York SuperStay Matte Ink City Edition Liquid Lipstick, Ar…</p>
+		  			</div>
+		  		</div>
+
+		  		<div class="flex-sidebar">
+		  			<div class="image">
+		  				<img src="images/main-products/4.jpg">
+		  			</div>
+		  			<div class="text">
+		  				<a href="">Anne Klein Women's Genuine Diamond Dial Bracelet Watch | best watches for women</a>
+		  				<p>Anne Klein Women's Genuine Diamond Dial Bracelet Watch About this It…</p>
+		  			</div>
+		  		</div>
+
+		  		<div class="flex-sidebar">
+		  			<div class="image">
+		  				<img src="images/main-products/6.jpg">
+		  			</div>
+		  			<div class="text">
+		  				<a href="">Timex Women's Easy Reader 25mm Watch | best watches for women | Top watches</a>
+		  				<p>Timex Women's Easy Reader 25mm Watch About this Item Adjustable blac…</p>
+		  			</div>
+		  		</div>
+		  	</div>
+
+		  	<div class="side-content" id="get-in-touch">
+		  		<header>Facebook</header>
+		  		<div class="fb-ad">
+		  		<img src="images/side-bar-images/fb-ad.png">
+		  		</div>
+		  	</div>
+
+		  	<div class="side-content">
+		  		<header>Subscribe Us</header>
+		  	</div>
+
+		  	<div class="side-content">
+		  		<header>Categories</header>
+		  		<br>
+		  		<br>
+		  	</div>
+
+		  	<div class="side-content">
+		  		<header>Tags</header>
+		  		<br>
+		  		<br>
+		  	</div>
 		  </aside>
-
-
 	</main>
+
+	<footer id="footer">
+		<div class="footer-flex tags">
+			<h1>Tags</h1>
+			<a href="" class="footer-btn">Lipstick</a>
+			<a href="" class="footer-btn">Watches</a>
+		</div>
+
+		<div class="footer-flex">
+			<h1>Most Popular</h1>
+			<div class="flex-texts">
+			<div class="image">
+		  				<img src="images/main-products/3.jpg">
+		  			</div>
+		  			<div class="text">
+		  				<a href="">Maybelline New York SuperStay Matte Ink City Edition Liquid Lipstick, Artist,</a>
+		  				<p>Maybelline New York SuperStay Matte Ink City Edition Liquid Lipstick, Ar…</p>
+		  			</div>
+		  			</div>
+		</div>
+
+		<div class="footer-flex">
+			<h1>Categories</h1>
+		</div>
+	</footer>
+
+	<div class="copyrights">
+		<p>Created by <a href="https://twitter.com/code17lolly">Mohammed Awal Dev</a> Copyrights &copy 2023</p>
+	</div>
 
 </body>
 </html>
